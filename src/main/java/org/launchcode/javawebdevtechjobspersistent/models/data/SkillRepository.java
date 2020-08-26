@@ -1,4 +1,11 @@
 package org.launchcode.javawebdevtechjobspersistent.models.data;
 
-public interface SkillRepository {
+import org.launchcode.javawebdevtechjobspersistent.models.Skill;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+@Repository
+@Transactional
+public interface SkillRepository extends CrudRepository<Skill,Integer> {
 }
